@@ -1,177 +1,177 @@
 <svg height="2782" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="2782" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-19 11:06:04 +0000   450549 bytes  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-19 11:06:04 +0000      109 bytes  README.md</tspan>
-<tspan x="10" y="58">  2.  2017-04-19 11:06:04 +0000     1222 bytes  animations.d.ts</tspan>
-<tspan x="10" y="74">  3.  2017-04-19 11:06:04 +0000     2589 bytes  animations.js</tspan>
-<tspan x="10" y="90">  4.  2017-04-19 11:06:04 +0000     5681 bytes  animations.metadata.json</tspan>
-<tspan x="10" y="106">  5.  2017-04-19 11:06:04 +0000      568 bytes  animations/animation-driver.d.ts</tspan>
-<tspan x="10" y="122">  6.  2017-04-19 11:06:04 +0000      931 bytes  animations/animation-driver.js</tspan>
-<tspan x="10" y="138">  7.  2017-04-19 11:06:04 +0000      561 bytes  animations/animation-driver.metadata.json</tspan>
-<tspan x="10" y="154">  8.  2017-04-19 11:06:04 +0000      557 bytes  animations/animation-engine.d.ts</tspan>
-<tspan x="10" y="170">  9.  2017-04-19 11:06:04 +0000     5916 bytes  animations/animation-engine.js</tspan>
-<tspan x="10" y="186"> 10.  2017-04-19 11:06:04 +0000      947 bytes  animations/animation-engine.metadata.json</tspan>
-<tspan x="10" y="202"> 11.  2017-04-19 11:06:04 +0000      927 bytes  animations/animation-player.d.ts</tspan>
-<tspan x="10" y="218"> 12.  2017-04-19 11:06:04 +0000     3613 bytes  animations/animation-player.js</tspan>
-<tspan x="10" y="234"> 13.  2017-04-19 11:06:04 +0000     2101 bytes  animations/animation-player.metadata.json</tspan>
-<tspan x="10" y="250"> 14.  2017-04-19 11:06:04 +0000      881 bytes  animations/dom-utils.d.ts</tspan>
-<tspan x="10" y="266"> 15.  2017-04-19 11:06:04 +0000     3587 bytes  animations/dom-utils.js</tspan>
-<tspan x="10" y="282"> 16.  2017-04-19 11:06:04 +0000     2261 bytes  animations/dom-utils.metadata.json</tspan>
-<tspan x="10" y="298"> 17.  2017-04-19 11:06:04 +0000      273 bytes  animations/utils.d.ts</tspan>
-<tspan x="10" y="314"> 18.  2017-04-19 11:06:04 +0000     4676 bytes  animations/utils.js</tspan>
-<tspan x="10" y="330"> 19.  2017-04-19 11:06:04 +0000      369 bytes  animations/utils.metadata.json</tspan>
-<tspan x="10" y="346"> 20.  2017-04-19 11:06:04 +0000     1460 bytes  bin/update-app-ng-deps</tspan>
-<tspan x="10" y="362"> 21.  2017-04-19 11:06:04 +0000       39 bytes  bin/update-app-ng-deps.cmd</tspan>
-<tspan x="10" y="378"> 22.  2017-04-19 11:06:04 +0000     1481 bytes  collection-facade.d.ts</tspan>
-<tspan x="10" y="394"> 23.  2017-04-19 11:06:04 +0000     4998 bytes  collection-facade.js</tspan>
-<tspan x="10" y="410"> 24.  2017-04-19 11:06:04 +0000     6349 bytes  collection-facade.metadata.json</tspan>
-<tspan x="10" y="426"> 25.  2017-04-19 11:06:04 +0000      814 bytes  common/detached-loader.d.ts</tspan>
-<tspan x="10" y="442"> 26.  2017-04-19 11:06:04 +0000     2286 bytes  common/detached-loader.js</tspan>
-<tspan x="10" y="458"> 27.  2017-04-19 11:06:04 +0000     1637 bytes  common/detached-loader.metadata.json</tspan>
-<tspan x="10" y="474"> 28.  2017-04-19 11:06:04 +0000       58 bytes  common/utils.d.ts</tspan>
-<tspan x="10" y="490"> 29.  2017-04-19 11:06:04 +0000      554 bytes  common/utils.js</tspan>
-<tspan x="10" y="506"> 30.  2017-04-19 11:06:04 +0000      181 bytes  common/utils.metadata.json</tspan>
-<tspan x="10" y="522"> 31.  2017-04-19 11:06:04 +0000     1547 bytes  directives.d.ts</tspan>
-<tspan x="10" y="538"> 32.  2017-04-19 11:06:04 +0000     2540 bytes  directives.js</tspan>
-<tspan x="10" y="554"> 33.  2017-04-19 11:06:04 +0000     3887 bytes  directives.metadata.json</tspan>
-<tspan x="10" y="570"> 34.  2017-04-19 11:06:04 +0000      961 bytes  directives/action-bar.d.ts</tspan>
-<tspan x="10" y="586"> 35.  2017-04-19 11:06:04 +0000     5429 bytes  directives/action-bar.js</tspan>
-<tspan x="10" y="602"> 36.  2017-04-19 11:06:04 +0000     4363 bytes  directives/action-bar.metadata.json</tspan>
-<tspan x="10" y="618"> 37.  2017-04-19 11:06:04 +0000      632 bytes  directives/dialogs.d.ts</tspan>
-<tspan x="10" y="634"> 38.  2017-04-19 11:06:04 +0000     3762 bytes  directives/dialogs.js</tspan>
-<tspan x="10" y="650"> 39.  2017-04-19 11:06:04 +0000     1641 bytes  directives/dialogs.metadata.json</tspan>
-<tspan x="10" y="666"> 40.  2017-04-19 11:06:04 +0000     1706 bytes  directives/list-view-comp.d.ts</tspan>
-<tspan x="10" y="682"> 41.  2017-04-19 11:06:04 +0000     9315 bytes  directives/list-view-comp.js</tspan>
-<tspan x="10" y="698"> 42.  2017-04-19 11:06:04 +0000     6389 bytes  directives/list-view-comp.metadata.json</tspan>
-<tspan x="10" y="714"> 43.  2017-04-19 11:06:04 +0000      231 bytes  directives/platform-filters.d.ts</tspan>
-<tspan x="10" y="730"> 44.  2017-04-19 11:06:04 +0000     1262 bytes  directives/platform-filters.js</tspan>
-<tspan x="10" y="746"> 45.  2017-04-19 11:06:04 +0000     2527 bytes  directives/platform-filters.metadata.json</tspan>
-<tspan x="10" y="762"> 46.  2017-04-19 11:06:04 +0000      789 bytes  directives/tab-view.d.ts</tspan>
-<tspan x="10" y="778"> 47.  2017-04-19 11:06:04 +0000     4404 bytes  directives/tab-view.js</tspan>
-<tspan x="10" y="794"> 48.  2017-04-19 11:06:04 +0000     3387 bytes  directives/tab-view.metadata.json</tspan>
-<tspan x="10" y="810"> 49.  2017-04-19 11:06:04 +0000     5631 bytes  dom-adapter.d.ts</tspan>
-<tspan x="10" y="826"> 50.  2017-04-19 11:06:04 +0000    16580 bytes  dom-adapter.js</tspan>
-<tspan x="10" y="842"> 51.  2017-04-19 11:06:04 +0000     9783 bytes  dom-adapter.metadata.json</tspan>
-<tspan x="10" y="858"> 52.  2017-04-19 11:06:04 +0000      882 bytes  element-registry.d.ts</tspan>
-<tspan x="10" y="874"> 53.  2017-04-19 11:06:04 +0000     5304 bytes  element-registry.js</tspan>
-<tspan x="10" y="890"> 54.  2017-04-19 11:06:04 +0000     1945 bytes  element-registry.metadata.json</tspan>
-<tspan x="10" y="906"> 55.  2017-04-19 11:06:04 +0000      102 bytes  file-system/ns-file-system.d.ts</tspan>
-<tspan x="10" y="922"> 56.  2017-04-19 11:06:04 +0000      577 bytes  file-system/ns-file-system.js</tspan>
-<tspan x="10" y="938"> 57.  2017-04-19 11:06:04 +0000      521 bytes  file-system/ns-file-system.metadata.json</tspan>
-<tspan x="10" y="954"> 58.  2017-04-19 11:06:04 +0000      745 bytes  forms.d.ts</tspan>
-<tspan x="10" y="970"> 59.  2017-04-19 11:06:04 +0000     1462 bytes  forms.js</tspan>
-<tspan x="10" y="986"> 60.  2017-04-19 11:06:04 +0000     2419 bytes  forms.metadata.json</tspan>
-<tspan x="10" y="1002"> 61.  2017-04-19 11:06:04 +0000      107 bytes  hooks/before-livesync.js</tspan>
-<tspan x="10" y="1018"> 62.  2017-04-19 11:06:04 +0000     1024 bytes  hooks/hook-helper.js</tspan>
-<tspan x="10" y="1034"> 63.  2017-04-19 11:06:04 +0000      305 bytes  http.d.ts</tspan>
-<tspan x="10" y="1050"> 64.  2017-04-19 11:06:04 +0000     1357 bytes  http.js</tspan>
-<tspan x="10" y="1066"> 65.  2017-04-19 11:06:04 +0000     3291 bytes  http.metadata.json</tspan>
-<tspan x="10" y="1082"> 66.  2017-04-19 11:06:04 +0000      704 bytes  http/ns-http.d.ts</tspan>
-<tspan x="10" y="1098"> 67.  2017-04-19 11:06:04 +0000     2452 bytes  http/ns-http.js</tspan>
-<tspan x="10" y="1114"> 68.  2017-04-19 11:06:04 +0000     1445 bytes  http/ns-http.metadata.json</tspan>
-<tspan x="10" y="1130"> 69.  2017-04-19 11:06:04 +0000      689 bytes  index.d.ts</tspan>
-<tspan x="10" y="1146"> 70.  2017-04-19 11:06:04 +0000     1049 bytes  index.js</tspan>
-<tspan x="10" y="1162"> 71.  2017-04-19 11:06:04 +0000     1289 bytes  index.metadata.json</tspan>
-<tspan x="10" y="1178"> 72.  2017-04-19 11:06:04 +0000       33 bytes  iterable.d.ts</tspan>
-<tspan x="10" y="1194"> 73.  2017-04-19 11:06:04 +0000      556 bytes  lang-facade.d.ts</tspan>
-<tspan x="10" y="1210"> 74.  2017-04-19 11:06:04 +0000     2103 bytes  lang-facade.js</tspan>
-<tspan x="10" y="1226"> 75.  2017-04-19 11:06:04 +0000     5057 bytes  lang-facade.metadata.json</tspan>
-<tspan x="10" y="1242"> 76.  2017-04-19 11:06:04 +0000      115 bytes  modal-dialog.d.ts</tspan>
-<tspan x="10" y="1258"> 77.  2017-04-19 11:06:04 +0000      258 bytes  modal-dialog.js</tspan>
-<tspan x="10" y="1274"> 78.  2017-04-19 11:06:04 +0000      371 bytes  modal-dialog.metadata.json</tspan>
-<tspan x="10" y="1290"> 79.  2017-04-19 11:06:04 +0000      336 bytes  nativescript.module.d.ts</tspan>
-<tspan x="10" y="1306"> 80.  2017-04-19 11:06:04 +0000     2040 bytes  nativescript.module.js</tspan>
-<tspan x="10" y="1322"> 81.  2017-04-19 11:06:04 +0000     4673 bytes  nativescript.module.metadata.json</tspan>
-<tspan x="10" y="1338"> 82.  2017-04-19 11:06:04 +0000     3435 bytes  package.json</tspan>
-<tspan x="10" y="1354"> 83.  2017-04-19 11:06:04 +0000     1763 bytes  platform-common.d.ts</tspan>
-<tspan x="10" y="1370"> 84.  2017-04-19 11:06:04 +0000     7043 bytes  platform-common.js</tspan>
-<tspan x="10" y="1386"> 85.  2017-04-19 11:06:04 +0000     2889 bytes  platform-common.metadata.json</tspan>
-<tspan x="10" y="1402"> 86.  2017-04-19 11:06:04 +0000     1248 bytes  platform-providers.d.ts</tspan>
-<tspan x="10" y="1418"> 87.  2017-04-19 11:06:04 +0000     1818 bytes  platform-providers.js</tspan>
-<tspan x="10" y="1434"> 88.  2017-04-19 11:06:04 +0000     4043 bytes  platform-providers.metadata.json</tspan>
-<tspan x="10" y="1450"> 89.  2017-04-19 11:06:04 +0000      198 bytes  platform-static.d.ts</tspan>
-<tspan x="10" y="1466"> 90.  2017-04-19 11:06:04 +0000      787 bytes  platform-static.js</tspan>
-<tspan x="10" y="1482"> 91.  2017-04-19 11:06:04 +0000      197 bytes  platform-static.metadata.json</tspan>
-<tspan x="10" y="1498"> 92.  2017-04-19 11:06:04 +0000     1136 bytes  platform.d.ts</tspan>
-<tspan x="10" y="1514"> 93.  2017-04-19 11:06:04 +0000     1912 bytes  platform.js</tspan>
-<tspan x="10" y="1530"> 94.  2017-04-19 11:06:04 +0000     1495 bytes  platform.metadata.json</tspan>
-<tspan x="10" y="1546"> 95.  2017-04-19 11:06:04 +0000        0 bytes  polyfills/array.d.ts</tspan>
-<tspan x="10" y="1562"> 96.  2017-04-19 11:06:04 +0000     1382 bytes  polyfills/array.js</tspan>
-<tspan x="10" y="1578"> 97.  2017-04-19 11:06:04 +0000        0 bytes  polyfills/console.d.ts</tspan>
-<tspan x="10" y="1594"> 98.  2017-04-19 11:06:04 +0000      163 bytes  polyfills/console.js</tspan>
-<tspan x="10" y="1610"> 99.  2017-04-19 11:06:04 +0000      617 bytes  postinstall.js</tspan>
-<tspan x="10" y="1626">100.  2017-04-19 11:06:04 +0000     2495 bytes  renderer.d.ts</tspan>
-<tspan x="10" y="1642">101.  2017-04-19 11:06:04 +0000    10844 bytes  renderer.js</tspan>
-<tspan x="10" y="1658">102.  2017-04-19 11:06:04 +0000     5459 bytes  renderer.metadata.json</tspan>
-<tspan x="10" y="1674">103.  2017-04-19 11:06:04 +0000      215 bytes  resource-loader.d.ts</tspan>
-<tspan x="10" y="1690">104.  2017-04-19 11:06:04 +0000     1321 bytes  resource-loader.js</tspan>
-<tspan x="10" y="1706">105.  2017-04-19 11:06:04 +0000      539 bytes  resource-loader.metadata.json</tspan>
-<tspan x="10" y="1722">106.  2017-04-19 11:06:04 +0000      236 bytes  router-url-tree.d.ts</tspan>
-<tspan x="10" y="1738">107.  2017-04-19 11:06:04 +0000     2655 bytes  router-url-tree.js</tspan>
-<tspan x="10" y="1754">108.  2017-04-19 11:06:04 +0000      257 bytes  router-url-tree.metadata.json</tspan>
-<tspan x="10" y="1770">109.  2017-04-19 11:06:04 +0000      781 bytes  router.d.ts</tspan>
-<tspan x="10" y="1786">110.  2017-04-19 11:06:04 +0000     3102 bytes  router.js</tspan>
-<tspan x="10" y="1802">111.  2017-04-19 11:06:04 +0000     7497 bytes  router.metadata.json</tspan>
-<tspan x="10" y="1818">112.  2017-04-19 11:06:04 +0000     1438 bytes  router/ns-location-strategy.d.ts</tspan>
-<tspan x="10" y="1834">113.  2017-04-19 11:06:04 +0000     7598 bytes  router/ns-location-strategy.js</tspan>
-<tspan x="10" y="1850">114.  2017-04-19 11:06:04 +0000     2657 bytes  router/ns-location-strategy.metadata.json</tspan>
-<tspan x="10" y="1866">115.  2017-04-19 11:06:04 +0000      427 bytes  router/ns-module-factory-loader.d.ts</tspan>
-<tspan x="10" y="1882">116.  2017-04-19 11:06:04 +0000     1941 bytes  router/ns-module-factory-loader.js</tspan>
-<tspan x="10" y="1898">117.  2017-04-19 11:06:04 +0000     1035 bytes  router/ns-module-factory-loader.metadata.json</tspan>
-<tspan x="10" y="1914">118.  2017-04-19 11:06:04 +0000      680 bytes  router/ns-platform-location.d.ts</tspan>
-<tspan x="10" y="1930">119.  2017-04-19 11:06:04 +0000     2592 bytes  router/ns-platform-location.js</tspan>
-<tspan x="10" y="1946">120.  2017-04-19 11:06:04 +0000     1497 bytes  router/ns-platform-location.metadata.json</tspan>
-<tspan x="10" y="1962">121.  2017-04-19 11:06:04 +0000     2110 bytes  router/ns-router-link-active.d.ts</tspan>
-<tspan x="10" y="1978">122.  2017-04-19 11:06:04 +0000     4341 bytes  router/ns-router-link-active.js</tspan>
-<tspan x="10" y="1994">123.  2017-04-19 11:06:04 +0000     2749 bytes  router/ns-router-link-active.metadata.json</tspan>
-<tspan x="10" y="2010">124.  2017-04-19 11:06:04 +0000     1934 bytes  router/ns-router-link.d.ts</tspan>
-<tspan x="10" y="2026">125.  2017-04-19 11:06:04 +0000     5399 bytes  router/ns-router-link.js</tspan>
-<tspan x="10" y="2042">126.  2017-04-19 11:06:04 +0000     4183 bytes  router/ns-router-link.metadata.json</tspan>
-<tspan x="10" y="2058">127.  2017-04-19 11:06:04 +0000     2197 bytes  router/page-router-outlet.d.ts</tspan>
-<tspan x="10" y="2074">128.  2017-04-19 11:06:04 +0000    11569 bytes  router/page-router-outlet.js</tspan>
-<tspan x="10" y="2090">129.  2017-04-19 11:06:04 +0000     4227 bytes  router/page-router-outlet.metadata.json</tspan>
-<tspan x="10" y="2106">130.  2017-04-19 11:06:04 +0000      764 bytes  router/router-extensions.d.ts</tspan>
-<tspan x="10" y="2122">131.  2017-04-19 11:06:04 +0000     1618 bytes  router/router-extensions.js</tspan>
-<tspan x="10" y="2138">132.  2017-04-19 11:06:04 +0000     1505 bytes  router/router-extensions.metadata.json</tspan>
-<tspan x="10" y="2154">133.  2017-04-19 11:06:04 +0000     1074 bytes  schema-registry.d.ts</tspan>
-<tspan x="10" y="2170">134.  2017-04-19 11:06:04 +0000     2347 bytes  schema-registry.js</tspan>
-<tspan x="10" y="2186">135.  2017-04-19 11:06:04 +0000     1573 bytes  schema-registry.metadata.json</tspan>
-<tspan x="10" y="2202">136.  2017-04-19 11:06:04 +0000      469 bytes  trace.d.ts</tspan>
-<tspan x="10" y="2218">137.  2017-04-19 11:06:04 +0000      879 bytes  trace.js</tspan>
-<tspan x="10" y="2234">138.  2017-04-19 11:06:04 +0000      719 bytes  trace.metadata.json</tspan>
-<tspan x="10" y="2250">139.  2017-04-19 11:06:04 +0000      379 bytes  value-accessors/base-value-accessor.d.ts</tspan>
-<tspan x="10" y="2266">140.  2017-04-19 11:06:04 +0000      938 bytes  value-accessors/base-value-accessor.js</tspan>
-<tspan x="10" y="2282">141.  2017-04-19 11:06:04 +0000      829 bytes  value-accessors/base-value-accessor.metadata.jso\</tspan>
+<tspan x="10" y="26">  0.  2017-04-19 11:07:08 +0000   450549 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-19 11:07:08 +0000      109 bytes  README.md</tspan>
+<tspan x="10" y="58">  2.  2017-04-19 11:07:08 +0000     1222 bytes  animations.d.ts</tspan>
+<tspan x="10" y="74">  3.  2017-04-19 11:07:08 +0000     2589 bytes  animations.js</tspan>
+<tspan x="10" y="90">  4.  2017-04-19 11:07:08 +0000     5681 bytes  animations.metadata.json</tspan>
+<tspan x="10" y="106">  5.  2017-04-19 11:07:08 +0000      568 bytes  animations/animation-driver.d.ts</tspan>
+<tspan x="10" y="122">  6.  2017-04-19 11:07:08 +0000      931 bytes  animations/animation-driver.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-19 11:07:08 +0000      561 bytes  animations/animation-driver.metadata.json</tspan>
+<tspan x="10" y="154">  8.  2017-04-19 11:07:08 +0000      557 bytes  animations/animation-engine.d.ts</tspan>
+<tspan x="10" y="170">  9.  2017-04-19 11:07:08 +0000     5916 bytes  animations/animation-engine.js</tspan>
+<tspan x="10" y="186"> 10.  2017-04-19 11:07:08 +0000      947 bytes  animations/animation-engine.metadata.json</tspan>
+<tspan x="10" y="202"> 11.  2017-04-19 11:07:08 +0000      927 bytes  animations/animation-player.d.ts</tspan>
+<tspan x="10" y="218"> 12.  2017-04-19 11:07:08 +0000     3613 bytes  animations/animation-player.js</tspan>
+<tspan x="10" y="234"> 13.  2017-04-19 11:07:08 +0000     2101 bytes  animations/animation-player.metadata.json</tspan>
+<tspan x="10" y="250"> 14.  2017-04-19 11:07:08 +0000      881 bytes  animations/dom-utils.d.ts</tspan>
+<tspan x="10" y="266"> 15.  2017-04-19 11:07:08 +0000     3587 bytes  animations/dom-utils.js</tspan>
+<tspan x="10" y="282"> 16.  2017-04-19 11:07:08 +0000     2261 bytes  animations/dom-utils.metadata.json</tspan>
+<tspan x="10" y="298"> 17.  2017-04-19 11:07:08 +0000      273 bytes  animations/utils.d.ts</tspan>
+<tspan x="10" y="314"> 18.  2017-04-19 11:07:08 +0000     4676 bytes  animations/utils.js</tspan>
+<tspan x="10" y="330"> 19.  2017-04-19 11:07:08 +0000      369 bytes  animations/utils.metadata.json</tspan>
+<tspan x="10" y="346"> 20.  2017-04-19 11:07:08 +0000     1460 bytes  bin/update-app-ng-deps</tspan>
+<tspan x="10" y="362"> 21.  2017-04-19 11:07:08 +0000       39 bytes  bin/update-app-ng-deps.cmd</tspan>
+<tspan x="10" y="378"> 22.  2017-04-19 11:07:08 +0000     1481 bytes  collection-facade.d.ts</tspan>
+<tspan x="10" y="394"> 23.  2017-04-19 11:07:08 +0000     4998 bytes  collection-facade.js</tspan>
+<tspan x="10" y="410"> 24.  2017-04-19 11:07:08 +0000     6349 bytes  collection-facade.metadata.json</tspan>
+<tspan x="10" y="426"> 25.  2017-04-19 11:07:08 +0000      814 bytes  common/detached-loader.d.ts</tspan>
+<tspan x="10" y="442"> 26.  2017-04-19 11:07:08 +0000     2286 bytes  common/detached-loader.js</tspan>
+<tspan x="10" y="458"> 27.  2017-04-19 11:07:08 +0000     1637 bytes  common/detached-loader.metadata.json</tspan>
+<tspan x="10" y="474"> 28.  2017-04-19 11:07:08 +0000       58 bytes  common/utils.d.ts</tspan>
+<tspan x="10" y="490"> 29.  2017-04-19 11:07:08 +0000      554 bytes  common/utils.js</tspan>
+<tspan x="10" y="506"> 30.  2017-04-19 11:07:08 +0000      181 bytes  common/utils.metadata.json</tspan>
+<tspan x="10" y="522"> 31.  2017-04-19 11:07:08 +0000     1547 bytes  directives.d.ts</tspan>
+<tspan x="10" y="538"> 32.  2017-04-19 11:07:08 +0000     2540 bytes  directives.js</tspan>
+<tspan x="10" y="554"> 33.  2017-04-19 11:07:08 +0000     3887 bytes  directives.metadata.json</tspan>
+<tspan x="10" y="570"> 34.  2017-04-19 11:07:08 +0000      961 bytes  directives/action-bar.d.ts</tspan>
+<tspan x="10" y="586"> 35.  2017-04-19 11:07:08 +0000     5429 bytes  directives/action-bar.js</tspan>
+<tspan x="10" y="602"> 36.  2017-04-19 11:07:08 +0000     4363 bytes  directives/action-bar.metadata.json</tspan>
+<tspan x="10" y="618"> 37.  2017-04-19 11:07:08 +0000      632 bytes  directives/dialogs.d.ts</tspan>
+<tspan x="10" y="634"> 38.  2017-04-19 11:07:08 +0000     3762 bytes  directives/dialogs.js</tspan>
+<tspan x="10" y="650"> 39.  2017-04-19 11:07:08 +0000     1641 bytes  directives/dialogs.metadata.json</tspan>
+<tspan x="10" y="666"> 40.  2017-04-19 11:07:08 +0000     1706 bytes  directives/list-view-comp.d.ts</tspan>
+<tspan x="10" y="682"> 41.  2017-04-19 11:07:08 +0000     9315 bytes  directives/list-view-comp.js</tspan>
+<tspan x="10" y="698"> 42.  2017-04-19 11:07:08 +0000     6389 bytes  directives/list-view-comp.metadata.json</tspan>
+<tspan x="10" y="714"> 43.  2017-04-19 11:07:08 +0000      231 bytes  directives/platform-filters.d.ts</tspan>
+<tspan x="10" y="730"> 44.  2017-04-19 11:07:08 +0000     1262 bytes  directives/platform-filters.js</tspan>
+<tspan x="10" y="746"> 45.  2017-04-19 11:07:08 +0000     2527 bytes  directives/platform-filters.metadata.json</tspan>
+<tspan x="10" y="762"> 46.  2017-04-19 11:07:08 +0000      789 bytes  directives/tab-view.d.ts</tspan>
+<tspan x="10" y="778"> 47.  2017-04-19 11:07:08 +0000     4404 bytes  directives/tab-view.js</tspan>
+<tspan x="10" y="794"> 48.  2017-04-19 11:07:08 +0000     3387 bytes  directives/tab-view.metadata.json</tspan>
+<tspan x="10" y="810"> 49.  2017-04-19 11:07:08 +0000     5631 bytes  dom-adapter.d.ts</tspan>
+<tspan x="10" y="826"> 50.  2017-04-19 11:07:08 +0000    16580 bytes  dom-adapter.js</tspan>
+<tspan x="10" y="842"> 51.  2017-04-19 11:07:08 +0000     9783 bytes  dom-adapter.metadata.json</tspan>
+<tspan x="10" y="858"> 52.  2017-04-19 11:07:08 +0000      882 bytes  element-registry.d.ts</tspan>
+<tspan x="10" y="874"> 53.  2017-04-19 11:07:08 +0000     5304 bytes  element-registry.js</tspan>
+<tspan x="10" y="890"> 54.  2017-04-19 11:07:08 +0000     1945 bytes  element-registry.metadata.json</tspan>
+<tspan x="10" y="906"> 55.  2017-04-19 11:07:08 +0000      102 bytes  file-system/ns-file-system.d.ts</tspan>
+<tspan x="10" y="922"> 56.  2017-04-19 11:07:08 +0000      577 bytes  file-system/ns-file-system.js</tspan>
+<tspan x="10" y="938"> 57.  2017-04-19 11:07:08 +0000      521 bytes  file-system/ns-file-system.metadata.json</tspan>
+<tspan x="10" y="954"> 58.  2017-04-19 11:07:08 +0000      745 bytes  forms.d.ts</tspan>
+<tspan x="10" y="970"> 59.  2017-04-19 11:07:08 +0000     1462 bytes  forms.js</tspan>
+<tspan x="10" y="986"> 60.  2017-04-19 11:07:08 +0000     2419 bytes  forms.metadata.json</tspan>
+<tspan x="10" y="1002"> 61.  2017-04-19 11:07:08 +0000      107 bytes  hooks/before-livesync.js</tspan>
+<tspan x="10" y="1018"> 62.  2017-04-19 11:07:08 +0000     1024 bytes  hooks/hook-helper.js</tspan>
+<tspan x="10" y="1034"> 63.  2017-04-19 11:07:08 +0000      305 bytes  http.d.ts</tspan>
+<tspan x="10" y="1050"> 64.  2017-04-19 11:07:08 +0000     1357 bytes  http.js</tspan>
+<tspan x="10" y="1066"> 65.  2017-04-19 11:07:08 +0000     3291 bytes  http.metadata.json</tspan>
+<tspan x="10" y="1082"> 66.  2017-04-19 11:07:08 +0000      704 bytes  http/ns-http.d.ts</tspan>
+<tspan x="10" y="1098"> 67.  2017-04-19 11:07:08 +0000     2452 bytes  http/ns-http.js</tspan>
+<tspan x="10" y="1114"> 68.  2017-04-19 11:07:08 +0000     1445 bytes  http/ns-http.metadata.json</tspan>
+<tspan x="10" y="1130"> 69.  2017-04-19 11:07:08 +0000      689 bytes  index.d.ts</tspan>
+<tspan x="10" y="1146"> 70.  2017-04-19 11:07:08 +0000     1049 bytes  index.js</tspan>
+<tspan x="10" y="1162"> 71.  2017-04-19 11:07:08 +0000     1289 bytes  index.metadata.json</tspan>
+<tspan x="10" y="1178"> 72.  2017-04-19 11:07:08 +0000       33 bytes  iterable.d.ts</tspan>
+<tspan x="10" y="1194"> 73.  2017-04-19 11:07:08 +0000      556 bytes  lang-facade.d.ts</tspan>
+<tspan x="10" y="1210"> 74.  2017-04-19 11:07:08 +0000     2103 bytes  lang-facade.js</tspan>
+<tspan x="10" y="1226"> 75.  2017-04-19 11:07:08 +0000     5057 bytes  lang-facade.metadata.json</tspan>
+<tspan x="10" y="1242"> 76.  2017-04-19 11:07:08 +0000      115 bytes  modal-dialog.d.ts</tspan>
+<tspan x="10" y="1258"> 77.  2017-04-19 11:07:08 +0000      258 bytes  modal-dialog.js</tspan>
+<tspan x="10" y="1274"> 78.  2017-04-19 11:07:08 +0000      371 bytes  modal-dialog.metadata.json</tspan>
+<tspan x="10" y="1290"> 79.  2017-04-19 11:07:08 +0000      336 bytes  nativescript.module.d.ts</tspan>
+<tspan x="10" y="1306"> 80.  2017-04-19 11:07:08 +0000     2040 bytes  nativescript.module.js</tspan>
+<tspan x="10" y="1322"> 81.  2017-04-19 11:07:08 +0000     4673 bytes  nativescript.module.metadata.json</tspan>
+<tspan x="10" y="1338"> 82.  2017-04-19 11:07:08 +0000     3435 bytes  package.json</tspan>
+<tspan x="10" y="1354"> 83.  2017-04-19 11:07:08 +0000     1763 bytes  platform-common.d.ts</tspan>
+<tspan x="10" y="1370"> 84.  2017-04-19 11:07:08 +0000     7043 bytes  platform-common.js</tspan>
+<tspan x="10" y="1386"> 85.  2017-04-19 11:07:08 +0000     2889 bytes  platform-common.metadata.json</tspan>
+<tspan x="10" y="1402"> 86.  2017-04-19 11:07:08 +0000     1248 bytes  platform-providers.d.ts</tspan>
+<tspan x="10" y="1418"> 87.  2017-04-19 11:07:08 +0000     1818 bytes  platform-providers.js</tspan>
+<tspan x="10" y="1434"> 88.  2017-04-19 11:07:08 +0000     4043 bytes  platform-providers.metadata.json</tspan>
+<tspan x="10" y="1450"> 89.  2017-04-19 11:07:08 +0000      198 bytes  platform-static.d.ts</tspan>
+<tspan x="10" y="1466"> 90.  2017-04-19 11:07:08 +0000      787 bytes  platform-static.js</tspan>
+<tspan x="10" y="1482"> 91.  2017-04-19 11:07:08 +0000      197 bytes  platform-static.metadata.json</tspan>
+<tspan x="10" y="1498"> 92.  2017-04-19 11:07:08 +0000     1136 bytes  platform.d.ts</tspan>
+<tspan x="10" y="1514"> 93.  2017-04-19 11:07:08 +0000     1912 bytes  platform.js</tspan>
+<tspan x="10" y="1530"> 94.  2017-04-19 11:07:08 +0000     1495 bytes  platform.metadata.json</tspan>
+<tspan x="10" y="1546"> 95.  2017-04-19 11:07:08 +0000        0 bytes  polyfills/array.d.ts</tspan>
+<tspan x="10" y="1562"> 96.  2017-04-19 11:07:08 +0000     1382 bytes  polyfills/array.js</tspan>
+<tspan x="10" y="1578"> 97.  2017-04-19 11:07:08 +0000        0 bytes  polyfills/console.d.ts</tspan>
+<tspan x="10" y="1594"> 98.  2017-04-19 11:07:08 +0000      163 bytes  polyfills/console.js</tspan>
+<tspan x="10" y="1610"> 99.  2017-04-19 11:07:08 +0000      617 bytes  postinstall.js</tspan>
+<tspan x="10" y="1626">100.  2017-04-19 11:07:08 +0000     2495 bytes  renderer.d.ts</tspan>
+<tspan x="10" y="1642">101.  2017-04-19 11:07:08 +0000    10844 bytes  renderer.js</tspan>
+<tspan x="10" y="1658">102.  2017-04-19 11:07:08 +0000     5459 bytes  renderer.metadata.json</tspan>
+<tspan x="10" y="1674">103.  2017-04-19 11:07:08 +0000      215 bytes  resource-loader.d.ts</tspan>
+<tspan x="10" y="1690">104.  2017-04-19 11:07:08 +0000     1321 bytes  resource-loader.js</tspan>
+<tspan x="10" y="1706">105.  2017-04-19 11:07:08 +0000      539 bytes  resource-loader.metadata.json</tspan>
+<tspan x="10" y="1722">106.  2017-04-19 11:07:08 +0000      236 bytes  router-url-tree.d.ts</tspan>
+<tspan x="10" y="1738">107.  2017-04-19 11:07:08 +0000     2655 bytes  router-url-tree.js</tspan>
+<tspan x="10" y="1754">108.  2017-04-19 11:07:08 +0000      257 bytes  router-url-tree.metadata.json</tspan>
+<tspan x="10" y="1770">109.  2017-04-19 11:07:08 +0000      781 bytes  router.d.ts</tspan>
+<tspan x="10" y="1786">110.  2017-04-19 11:07:08 +0000     3102 bytes  router.js</tspan>
+<tspan x="10" y="1802">111.  2017-04-19 11:07:08 +0000     7497 bytes  router.metadata.json</tspan>
+<tspan x="10" y="1818">112.  2017-04-19 11:07:08 +0000     1438 bytes  router/ns-location-strategy.d.ts</tspan>
+<tspan x="10" y="1834">113.  2017-04-19 11:07:08 +0000     7598 bytes  router/ns-location-strategy.js</tspan>
+<tspan x="10" y="1850">114.  2017-04-19 11:07:08 +0000     2657 bytes  router/ns-location-strategy.metadata.json</tspan>
+<tspan x="10" y="1866">115.  2017-04-19 11:07:08 +0000      427 bytes  router/ns-module-factory-loader.d.ts</tspan>
+<tspan x="10" y="1882">116.  2017-04-19 11:07:08 +0000     1941 bytes  router/ns-module-factory-loader.js</tspan>
+<tspan x="10" y="1898">117.  2017-04-19 11:07:08 +0000     1035 bytes  router/ns-module-factory-loader.metadata.json</tspan>
+<tspan x="10" y="1914">118.  2017-04-19 11:07:08 +0000      680 bytes  router/ns-platform-location.d.ts</tspan>
+<tspan x="10" y="1930">119.  2017-04-19 11:07:08 +0000     2592 bytes  router/ns-platform-location.js</tspan>
+<tspan x="10" y="1946">120.  2017-04-19 11:07:08 +0000     1497 bytes  router/ns-platform-location.metadata.json</tspan>
+<tspan x="10" y="1962">121.  2017-04-19 11:07:08 +0000     2110 bytes  router/ns-router-link-active.d.ts</tspan>
+<tspan x="10" y="1978">122.  2017-04-19 11:07:08 +0000     4341 bytes  router/ns-router-link-active.js</tspan>
+<tspan x="10" y="1994">123.  2017-04-19 11:07:08 +0000     2749 bytes  router/ns-router-link-active.metadata.json</tspan>
+<tspan x="10" y="2010">124.  2017-04-19 11:07:08 +0000     1934 bytes  router/ns-router-link.d.ts</tspan>
+<tspan x="10" y="2026">125.  2017-04-19 11:07:08 +0000     5399 bytes  router/ns-router-link.js</tspan>
+<tspan x="10" y="2042">126.  2017-04-19 11:07:08 +0000     4183 bytes  router/ns-router-link.metadata.json</tspan>
+<tspan x="10" y="2058">127.  2017-04-19 11:07:08 +0000     2197 bytes  router/page-router-outlet.d.ts</tspan>
+<tspan x="10" y="2074">128.  2017-04-19 11:07:08 +0000    11569 bytes  router/page-router-outlet.js</tspan>
+<tspan x="10" y="2090">129.  2017-04-19 11:07:08 +0000     4227 bytes  router/page-router-outlet.metadata.json</tspan>
+<tspan x="10" y="2106">130.  2017-04-19 11:07:08 +0000      764 bytes  router/router-extensions.d.ts</tspan>
+<tspan x="10" y="2122">131.  2017-04-19 11:07:08 +0000     1618 bytes  router/router-extensions.js</tspan>
+<tspan x="10" y="2138">132.  2017-04-19 11:07:08 +0000     1505 bytes  router/router-extensions.metadata.json</tspan>
+<tspan x="10" y="2154">133.  2017-04-19 11:07:08 +0000     1074 bytes  schema-registry.d.ts</tspan>
+<tspan x="10" y="2170">134.  2017-04-19 11:07:08 +0000     2347 bytes  schema-registry.js</tspan>
+<tspan x="10" y="2186">135.  2017-04-19 11:07:08 +0000     1573 bytes  schema-registry.metadata.json</tspan>
+<tspan x="10" y="2202">136.  2017-04-19 11:07:08 +0000      469 bytes  trace.d.ts</tspan>
+<tspan x="10" y="2218">137.  2017-04-19 11:07:08 +0000      879 bytes  trace.js</tspan>
+<tspan x="10" y="2234">138.  2017-04-19 11:07:08 +0000      719 bytes  trace.metadata.json</tspan>
+<tspan x="10" y="2250">139.  2017-04-19 11:07:08 +0000      379 bytes  value-accessors/base-value-accessor.d.ts</tspan>
+<tspan x="10" y="2266">140.  2017-04-19 11:07:08 +0000      938 bytes  value-accessors/base-value-accessor.js</tspan>
+<tspan x="10" y="2282">141.  2017-04-19 11:07:08 +0000      829 bytes  value-accessors/base-value-accessor.metadata.jso\</tspan>
 <tspan x="10" y="2298">n</tspan>
-<tspan x="10" y="2314">142.  2017-04-19 11:06:04 +0000      615 bytes  value-accessors/checked-value-accessor.d.ts</tspan>
-<tspan x="10" y="2330">143.  2017-04-19 11:06:04 +0000     2343 bytes  value-accessors/checked-value-accessor.js</tspan>
-<tspan x="10" y="2346">144.  2017-04-19 11:06:04 +0000     2197 bytes  value-accessors/checked-value-accessor.metadata.\</tspan>
+<tspan x="10" y="2314">142.  2017-04-19 11:07:08 +0000      615 bytes  value-accessors/checked-value-accessor.d.ts</tspan>
+<tspan x="10" y="2330">143.  2017-04-19 11:07:08 +0000     2343 bytes  value-accessors/checked-value-accessor.js</tspan>
+<tspan x="10" y="2346">144.  2017-04-19 11:07:08 +0000     2197 bytes  value-accessors/checked-value-accessor.metadata.\</tspan>
 <tspan x="10" y="2362">json</tspan>
-<tspan x="10" y="2378">145.  2017-04-19 11:06:04 +0000      614 bytes  value-accessors/date-value-accessor.d.ts</tspan>
-<tspan x="10" y="2394">146.  2017-04-19 11:06:04 +0000     2521 bytes  value-accessors/date-value-accessor.js</tspan>
-<tspan x="10" y="2410">147.  2017-04-19 11:06:04 +0000     2225 bytes  value-accessors/date-value-accessor.metadata.jso\</tspan>
+<tspan x="10" y="2378">145.  2017-04-19 11:07:08 +0000      614 bytes  value-accessors/date-value-accessor.d.ts</tspan>
+<tspan x="10" y="2394">146.  2017-04-19 11:07:08 +0000     2521 bytes  value-accessors/date-value-accessor.js</tspan>
+<tspan x="10" y="2410">147.  2017-04-19 11:07:08 +0000     2225 bytes  value-accessors/date-value-accessor.metadata.jso\</tspan>
 <tspan x="10" y="2426">n</tspan>
-<tspan x="10" y="2442">148.  2017-04-19 11:06:04 +0000      589 bytes  value-accessors/number-value-accessor.d.ts</tspan>
-<tspan x="10" y="2458">149.  2017-04-19 11:06:04 +0000     2387 bytes  value-accessors/number-value-accessor.js</tspan>
-<tspan x="10" y="2474">150.  2017-04-19 11:06:04 +0000     2185 bytes  value-accessors/number-value-accessor.metadata.j\</tspan>
+<tspan x="10" y="2442">148.  2017-04-19 11:07:08 +0000      589 bytes  value-accessors/number-value-accessor.d.ts</tspan>
+<tspan x="10" y="2458">149.  2017-04-19 11:07:08 +0000     2387 bytes  value-accessors/number-value-accessor.js</tspan>
+<tspan x="10" y="2474">150.  2017-04-19 11:07:08 +0000     2185 bytes  value-accessors/number-value-accessor.metadata.j\</tspan>
 <tspan x="10" y="2490">son</tspan>
-<tspan x="10" y="2506">151.  2017-04-19 11:06:04 +0000      843 bytes  value-accessors/selectedIndex-value-accessor.d.t\</tspan>
+<tspan x="10" y="2506">151.  2017-04-19 11:07:08 +0000      843 bytes  value-accessors/selectedIndex-value-accessor.d.t\</tspan>
 <tspan x="10" y="2522">s</tspan>
-<tspan x="10" y="2538">152.  2017-04-19 11:06:04 +0000     2770 bytes  value-accessors/selectedIndex-value-accessor.js</tspan>
-<tspan x="10" y="2554">153.  2017-04-19 11:06:04 +0000     2981 bytes  value-accessors/selectedIndex-value-accessor.met\</tspan>
+<tspan x="10" y="2538">152.  2017-04-19 11:07:08 +0000     2770 bytes  value-accessors/selectedIndex-value-accessor.js</tspan>
+<tspan x="10" y="2554">153.  2017-04-19 11:07:08 +0000     2981 bytes  value-accessors/selectedIndex-value-accessor.met\</tspan>
 <tspan x="10" y="2570">adata.json</tspan>
-<tspan x="10" y="2586">154.  2017-04-19 11:06:04 +0000      664 bytes  value-accessors/text-value-accessor.d.ts</tspan>
-<tspan x="10" y="2602">155.  2017-04-19 11:06:04 +0000     2356 bytes  value-accessors/text-value-accessor.js</tspan>
-<tspan x="10" y="2618">156.  2017-04-19 11:06:04 +0000     2785 bytes  value-accessors/text-value-accessor.metadata.jso\</tspan>
+<tspan x="10" y="2586">154.  2017-04-19 11:07:08 +0000      664 bytes  value-accessors/text-value-accessor.d.ts</tspan>
+<tspan x="10" y="2602">155.  2017-04-19 11:07:08 +0000     2356 bytes  value-accessors/text-value-accessor.js</tspan>
+<tspan x="10" y="2618">156.  2017-04-19 11:07:08 +0000     2785 bytes  value-accessors/text-value-accessor.metadata.jso\</tspan>
 <tspan x="10" y="2634">n</tspan>
-<tspan x="10" y="2650">157.  2017-04-19 11:06:04 +0000      614 bytes  value-accessors/time-value-accessor.d.ts</tspan>
-<tspan x="10" y="2666">158.  2017-04-19 11:06:04 +0000     2521 bytes  value-accessors/time-value-accessor.js</tspan>
-<tspan x="10" y="2682">159.  2017-04-19 11:06:04 +0000     2225 bytes  value-accessors/time-value-accessor.metadata.jso\</tspan>
+<tspan x="10" y="2650">157.  2017-04-19 11:07:08 +0000      614 bytes  value-accessors/time-value-accessor.d.ts</tspan>
+<tspan x="10" y="2666">158.  2017-04-19 11:07:08 +0000     2521 bytes  value-accessors/time-value-accessor.js</tspan>
+<tspan x="10" y="2682">159.  2017-04-19 11:07:08 +0000     2225 bytes  value-accessors/time-value-accessor.metadata.jso\</tspan>
 <tspan x="10" y="2698">n</tspan>
-<tspan x="10" y="2714">160.  2017-04-19 11:06:04 +0000     1987 bytes  view-util.d.ts</tspan>
-<tspan x="10" y="2730">161.  2017-04-19 11:06:04 +0000    11613 bytes  view-util.js</tspan>
-<tspan x="10" y="2746">162.  2017-04-19 11:06:04 +0000     3691 bytes  view-util.metadata.json</tspan>
-<tspan x="10" y="2762">163.  2017-04-19 11:06:04 +0000    75025 bytes  zone-js/dist/zone-nativescript.js</tspan>
+<tspan x="10" y="2714">160.  2017-04-19 11:07:08 +0000     1987 bytes  view-util.d.ts</tspan>
+<tspan x="10" y="2730">161.  2017-04-19 11:07:08 +0000    11613 bytes  view-util.js</tspan>
+<tspan x="10" y="2746">162.  2017-04-19 11:07:08 +0000     3691 bytes  view-util.metadata.json</tspan>
+<tspan x="10" y="2762">163.  2017-04-19 11:07:08 +0000    75025 bytes  zone-js/dist/zone-nativescript.js</tspan>
 </text>
 </svg>
