@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-nativescript-angular/node_modules/nativescript-angular/renderer.js</title>
+    <meta charset="utf-8">
+    <style>
+        body, html {
+            margin:0; padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica;
+            font-size: 10pt;
+        }
+        div.header, div.footer {
+            background: #eee;
+            padding: 1em;
+        }
+        div.header {
+            height: 160px;
+            padding: 0 1em 0 1em;
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            border-bottom: 1px solid #666;
+            width: 100%;
+        }
+        div.footer {
+            border-top: 1px solid #666;
+        }
+        div.body {
+            margin-top: 170px;
+        }
+        div.meta {
+            font-size: 90%;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            font-weight: normal;
+        }
+        h1 {
+            font-size: 12pt;
+        }
+        h2 {
+            font-size: 10pt;
+        }
+        pre {
+            font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            tab-size: 2;
+        }
+
+        div.path { font-size: 110%; }
+        div.path a:link, div.path a:visited { color: #000; }
+        table.coverage { border-collapse: collapse; margin:0; padding: 0 }
+
+        table.coverage td {
+            margin: 0;
+            padding: 0;
+            color: #111;
+            vertical-align: top;
+        }
+        table.coverage td.line-count {
+            width: 50px;
+            text-align: right;
+            padding-right: 5px;
+        }
+        table.coverage td.line-coverage {
+            color: #777 !important;
+            text-align: right;
+            border-left: 1px solid #666;
+            border-right: 1px solid #666;
+        }
+
+        table.coverage td.text {
+        }
+
+        table.coverage td span.cline-any {
+            display: inline-block;
+            padding: 0 5px;
+            width: 40px;
+        }
+        table.coverage td span.cline-neutral {
+            background: #eee;
+        }
+        table.coverage td span.cline-yes {
+            background: #b5d592;
+            color: #999;
+        }
+        table.coverage td span.cline-no {
+            background: #fc8c84;
+        }
+
+        .cstat-yes { color: #111; }
+        .cstat-no { background: #fc8c84; color: #111; }
+        .fstat-no { background: #ffc520; color: #111 !important; }
+        .cbranch-no { background:  yellow !important; color: #111; }
+
+        .cstat-skip { background: #ddd; color: #111; }
+        .fstat-skip { background: #ddd; color: #111 !important; }
+        .cbranch-skip { background: #ddd !important; color: #111; }
+
+        .missing-if-branch {
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+            padding: 0 4px;
+            background: black;
+            color: yellow;
+        }
+
+        .skip-if-branch {
+            display: none;
+            margin-right: 10px;
+            position: relative;
+            padding: 0 4px;
+            background: #ccc;
+            color: white;
+        }
+
+        .missing-if-branch .typ, .skip-if-branch .typ {
+            color: inherit !important;
+        }
+
+        .entity, .metric { font-weight: bold; }
+        .metric { display: inline-block; border: 1px solid #333; padding: 0.3em; background: white; }
+        .metric small { font-size: 80%; font-weight: normal; color: #666; }
+
+        div.coverage-summary table { border-collapse: collapse; margin: 3em; font-size: 110%; }
+        div.coverage-summary td, div.coverage-summary table  th { margin: 0; padding: 0.25em 1em; border-top: 1px solid #666; border-bottom: 1px solid #666; }
+        div.coverage-summary th { text-align: left; border: 1px solid #666; background: #eee; font-weight: normal; }
+        div.coverage-summary th.file { border-right: none !important; }
+        div.coverage-summary th.pic { border-left: none !important; text-align: right; }
+        div.coverage-summary th.pct { border-right: none !important; }
+        div.coverage-summary th.abs { border-left: none !important; text-align: right; }
+        div.coverage-summary td.pct { text-align: right; border-left: 1px solid #666; }
+        div.coverage-summary td.abs { text-align: right; font-size: 90%; color: #444; border-right: 1px solid #666; }
+        div.coverage-summary td.file { text-align: right; border-left: 1px solid #666; white-space: nowrap;  }
+        div.coverage-summary td.pic { min-width: 120px !important;  }
+        div.coverage-summary a:link { color: #000; }
+        div.coverage-summary a:visited { color: #333; }
+        div.coverage-summary tfoot td { border-top: 1px solid #666; }
+
+        div.coverage-summary .yui3-datatable-sort-indicator, div.coverage-summary .dummy-sort-indicator {
+            height: 10px;
+            width: 7px;
+            display: inline-block;
+            margin-left: 0.5em;
+        }
+        div.coverage-summary .yui3-datatable-sort-indicator {
+            background: no-repeat scroll 0 0 transparent;
+        }
+        div.coverage-summary .yui3-datatable-sorted .yui3-datatable-sort-indicator {
+            background-position: 0 -20px;
+        }
+        div.coverage-summary .yui3-datatable-sorted-desc .yui3-datatable-sort-indicator {
+            background-position: 0 -10px;
+        }
+
+        .high { background: #b5d592 !important; }
+        .medium { background: #ffe87c !important; }
+        .low { background: #fc8c84 !important; }
+
+        span.cover-fill, span.cover-empty {
+            display:inline-block;
+            border:1px solid #444;
+            background: white;
+            height: 12px;
+        }
+        span.cover-fill {
+            background: #ccc;
+            border-right: 1px solid #444;
+        }
+        span.cover-empty {
+            background: white;
+            border-left: none;
+        }
+        span.cover-full {
+            border-right: none !important;
+        }
+        pre.prettyprint {
+            border: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .com { color: #999 !important; }
+        .ignore-none { color: #999; font-weight: normal; }
+
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1 style="font-weight: bold;">
+        <a href="https://github.com/npmtest/node-npmtest-nativescript-angular">npmtest-nativescript-angular (v0.0.1)</a>
+    </h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-nativescript-angular/node_modules/nativescript-angular/renderer.js</span></h1>
+    <h2>
+        
+        Statements: <span class="metric">3.8% <small>(6 / 158)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Branches: <span class="metric">0% <small>(0 / 26)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Functions: <span class="metric">0% <small>(0 / 43)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Lines: <span class="metric">3.87% <small>(6 / 155)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-nativescript-angular/node_modules/nativescript-angular/</a> &#187; renderer.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222</td><td class="line-coverage"><span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var core_1 = require("@angular/core");
+var view_1 = require("ui/core/view");
+<span class="cstat-no" title="statement not covered" >var application_1 = require("application");</span>
+<span class="cstat-no" title="statement not covered" >var frame_1 = require("ui/frame");</span>
+<span class="cstat-no" title="statement not covered" >var lang_facade_1 = require("./lang-facade");</span>
+<span class="cstat-no" title="statement not covered" >var view_util_1 = require("./view-util");</span>
+<span class="cstat-no" title="statement not covered" >var platform_providers_1 = require("./platform-providers");</span>
+<span class="cstat-no" title="statement not covered" >var trace_1 = require("./trace");</span>
+// CONTENT_ATTR not exported from NativeScript_renderer - we need it for styles application.
+<span class="cstat-no" title="statement not covered" >var COMPONENT_REGEX = /%COMP%/g;</span>
+<span class="cstat-no" title="statement not covered" >exports.COMPONENT_VARIABLE = "%COMP%";</span>
+<span class="cstat-no" title="statement not covered" >exports.HOST_ATTR = "_nghost-" + exports.COMPONENT_VARIABLE;</span>
+<span class="cstat-no" title="statement not covered" >exports.CONTENT_ATTR = "_ngcontent-" + exports.COMPONENT_VARIABLE;</span>
+<span class="cstat-no" title="statement not covered" >var ATTR_SANITIZER = /-/g;</span>
+<span class="cstat-no" title="statement not covered" >var NativeScriptRendererFactory = (<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="fstat-no" title="function not covered" >    function NativeScriptRendererFactory(rootView, device, zone) {</span>
+<span class="cstat-no" title="statement not covered" >        this.zone = zone;</span>
+<span class="cstat-no" title="statement not covered" >        this.componentRenderers = new Map();</span>
+<span class="cstat-no" title="statement not covered" >        this.viewUtil = new view_util_1.ViewUtil(device);</span>
+<span class="cstat-no" title="statement not covered" >        this.setRootNgView(rootView);</span>
+<span class="cstat-no" title="statement not covered" >        this.defaultRenderer = new NativeScriptRenderer(this.rootNgView, zone, this.viewUtil);</span>
+    }
+<span class="cstat-no" title="statement not covered" >    NativeScriptRendererFactory.prototype.setRootNgView = <span class="fstat-no" title="function not covered" >function (rootView) {</span></span>
+<span class="cstat-no" title="statement not covered" >        if (!rootView) {</span>
+<span class="cstat-no" title="statement not covered" >            rootView = platform_providers_1.getRootPage() || frame_1.topmost().currentPage;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        rootView.nodeName = "NONE";</span>
+<span class="cstat-no" title="statement not covered" >        this.rootNgView = rootView;</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRendererFactory.prototype.createRenderer = <span class="fstat-no" title="function not covered" >function (element, type) {</span></span>
+<span class="cstat-no" title="statement not covered" >        if (!element || !type) {</span>
+<span class="cstat-no" title="statement not covered" >            return this.defaultRenderer;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        var renderer = this.componentRenderers.get(type.id);</span>
+<span class="cstat-no" title="statement not covered" >        if (!lang_facade_1.isBlank(renderer)) {</span>
+<span class="cstat-no" title="statement not covered" >            return renderer;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        if (type.encapsulation === core_1.ViewEncapsulation.Emulated) {</span>
+<span class="cstat-no" title="statement not covered" >            renderer = new EmulatedRenderer(type, this.rootNgView, this.zone, this.viewUtil);</span>
+<span class="cstat-no" title="statement not covered" >            renderer.applyToHost(element);</span>
+        }
+        else {
+<span class="cstat-no" title="statement not covered" >            renderer = this.defaultRenderer;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        this.componentRenderers.set(type.id, renderer);</span>
+<span class="cstat-no" title="statement not covered" >        return renderer;</span>
+    };
+<span class="cstat-no" title="statement not covered" >    return NativeScriptRendererFactory;</span>
+}());
+<span class="cstat-no" title="statement not covered" >NativeScriptRendererFactory = __decorate([</span>
+    core_1.Injectable(),
+    __param(0, core_1.Optional()), __param(0, core_1.Inject(platform_providers_1.APP_ROOT_VIEW)),
+    __param(1, core_1.Inject(platform_providers_1.DEVICE)),
+    __metadata("design:paramtypes", [view_1.View, Object, core_1.NgZone])
+], NativeScriptRendererFactory);
+<span class="cstat-no" title="statement not covered" >exports.NativeScriptRendererFactory = NativeScriptRendererFactory;</span>
+<span class="cstat-no" title="statement not covered" >var NativeScriptRenderer = (<span class="fstat-no" title="function not covered" >function (_super) {</span></span>
+<span class="cstat-no" title="statement not covered" >    __extends(NativeScriptRenderer, _super);</span>
+<span class="fstat-no" title="function not covered" >    function NativeScriptRenderer(rootView, zone, viewUtil) {</span>
+<span class="cstat-no" title="statement not covered" >        var _this = _super.call(this) || this;</span>
+<span class="cstat-no" title="statement not covered" >        _this.rootView = rootView;</span>
+<span class="cstat-no" title="statement not covered" >        _this.zone = zone;</span>
+<span class="cstat-no" title="statement not covered" >        _this.viewUtil = viewUtil;</span>
+<span class="cstat-no" title="statement not covered" >        _this.data = Object.create(null);</span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer created");</span>
+<span class="cstat-no" title="statement not covered" >        return _this;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.appendChild = <span class="fstat-no" title="function not covered" >function (parent, newChild) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.appendChild child: " + newChild + " parent: " + parent);</span>
+<span class="cstat-no" title="statement not covered" >        if (parent) {</span>
+<span class="cstat-no" title="statement not covered" >            this.viewUtil.insertChild(parent, newChild);</span>
+        }
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.insertBefore = <span class="fstat-no" title="function not covered" >function (parent, newChild, refChildIndex) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.insertBefore child: " + newChild + " parent: " + parent);</span>
+<span class="cstat-no" title="statement not covered" >        if (parent) {</span>
+<span class="cstat-no" title="statement not covered" >            this.viewUtil.insertChild(parent, newChild, refChildIndex);</span>
+        }
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.removeChild = <span class="fstat-no" title="function not covered" >function (parent, oldChild) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.removeChild child: " + oldChild + " parent: " + parent);</span>
+<span class="cstat-no" title="statement not covered" >        if (parent) {</span>
+<span class="cstat-no" title="statement not covered" >            this.viewUtil.removeChild(parent, oldChild);</span>
+        }
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.selectRootElement = <span class="fstat-no" title="function not covered" >function (selector) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("selectRootElement: " + selector);</span>
+<span class="cstat-no" title="statement not covered" >        return this.rootView;</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.parentNode = <span class="fstat-no" title="function not covered" >function (node) {</span></span>
+<span class="cstat-no" title="statement not covered" >        return node.parent;</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.nextSibling = <span class="fstat-no" title="function not covered" >function (node) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.nextSibling " + node);</span>
+<span class="cstat-no" title="statement not covered" >        return this.viewUtil.nextSiblingIndex(node);</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.createComment = <span class="fstat-no" title="function not covered" >function (_value) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.createComment " + _value);</span>
+<span class="cstat-no" title="statement not covered" >        return this.viewUtil.createComment();</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.createElement = <span class="fstat-no" title="function not covered" >function (name, _namespace) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.createElement: " + name);</span>
+<span class="cstat-no" title="statement not covered" >        return this.viewUtil.createView(name);</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.createText = <span class="fstat-no" title="function not covered" >function (_value) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.createText " + _value);</span>
+<span class="cstat-no" title="statement not covered" >        return this.viewUtil.createText();</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.createViewRoot = <span class="fstat-no" title="function not covered" >function (hostElement) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.createViewRoot " + hostElement.nodeName);</span>
+<span class="cstat-no" title="statement not covered" >        return hostElement;</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.projectNodes = <span class="fstat-no" title="function not covered" >function (parentElement, nodes) {</span></span>
+<span class="cstat-no" title="statement not covered" >        var _this = this;</span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.projectNodes");</span>
+<span class="cstat-no" title="statement not covered" >        nodes.forEach(<span class="fstat-no" title="function not covered" >function (node) {</span> <span class="cstat-no" title="statement not covered" >return _this.viewUtil.insertChild(parentElement, node); </span>});</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.destroy = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.destroy");</span>
+        // Seems to be called on component dispose only (router outlet)
+        // TODO: handle this when we resolve routing and navigation.
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.setAttribute = <span class="fstat-no" title="function not covered" >function (view, name, value, namespace) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.setAttribute " + view + " : " + name + " = " + value + ", namespace: " + namespace);</span>
+<span class="cstat-no" title="statement not covered" >        return this.viewUtil.setProperty(view, name, value, namespace);</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.removeAttribute = <span class="fstat-no" title="function not covered" >function (_el, _name) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.removeAttribute " + _el + ": " + _name);</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.setProperty = <span class="fstat-no" title="function not covered" >function (view, name, value) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.setProperty " + view + " : " + name + " = " + value);</span>
+<span class="cstat-no" title="statement not covered" >        return this.viewUtil.setProperty(view, name, value);</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.addClass = <span class="fstat-no" title="function not covered" >function (view, name) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.addClass " + name);</span>
+<span class="cstat-no" title="statement not covered" >        this.viewUtil.addClass(view, name);</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.removeClass = <span class="fstat-no" title="function not covered" >function (view, name) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.removeClass " + name);</span>
+<span class="cstat-no" title="statement not covered" >        this.viewUtil.removeClass(view, name);</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.setStyle = <span class="fstat-no" title="function not covered" >function (view, styleName, value, _flags) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.setStyle: " + styleName + " = " + value);</span>
+<span class="cstat-no" title="statement not covered" >        this.viewUtil.setStyle(view, styleName, value);</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.removeStyle = <span class="fstat-no" title="function not covered" >function (view, styleName, _flags) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.removeStyle: ${styleName}");</span>
+<span class="cstat-no" title="statement not covered" >        this.viewUtil.removeStyle(view, styleName);</span>
+    };
+    // Used only in debug mode to serialize property changes to comment nodes,
+    // such as &lt;template&gt; placeholders.
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.setBindingDebugInfo = <span class="fstat-no" title="function not covered" >function (renderElement, propertyName, propertyValue) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.setBindingDebugInfo: " + renderElement + ", " +</span>
+            propertyName + " = " + propertyValue);
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.setElementDebugInfo = <span class="fstat-no" title="function not covered" >function (renderElement, _info /*RenderDebugInfo*/) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.setElementDebugInfo: " + renderElement);</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.invokeElementMethod = <span class="fstat-no" title="function not covered" >function (_renderElement, methodName, args) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.invokeElementMethod " + methodName + " " + args);</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.setValue = <span class="fstat-no" title="function not covered" >function (_renderNode, _value) {</span></span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.setValue");</span>
+    };
+<span class="cstat-no" title="statement not covered" >    NativeScriptRenderer.prototype.listen = <span class="fstat-no" title="function not covered" >function (renderElement, eventName, callback) {</span></span>
+<span class="cstat-no" title="statement not covered" >        var _this = this;</span>
+<span class="cstat-no" title="statement not covered" >        trace_1.rendererLog("NativeScriptRenderer.listen: " + eventName);</span>
+        // Explicitly wrap in zone
+<span class="cstat-no" title="statement not covered" >        var zonedCallback = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            var args = [];</span>
+<span class="cstat-no" title="statement not covered" >            for (var _i = 0; _i &lt; arguments.length; _i++) {</span>
+<span class="cstat-no" title="statement not covered" >                args[_i] = arguments[_i];</span>
+            }
+<span class="cstat-no" title="statement not covered" >            _this.zone.run(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >                callback.apply(undefined, args);</span>
+            });
+        };
+<span class="cstat-no" title="statement not covered" >        renderElement.on(eventName, zonedCallback);</span>
+<span class="cstat-no" title="statement not covered" >        if (eventName === view_1.View.loadedEvent &amp;&amp; renderElement.isLoaded) {</span>
+<span class="cstat-no" title="statement not covered" >            var notifyData = { eventName: view_1.View.loadedEvent, object: renderElement };</span>
+<span class="cstat-no" title="statement not covered" >            zonedCallback(notifyData);</span>
+        }
+<span class="cstat-no" title="statement not covered" >        return <span class="fstat-no" title="function not covered" >function () {</span> <span class="cstat-no" title="statement not covered" >return renderElement.off(eventName, zonedCallback); </span>};</span>
+    };
+<span class="cstat-no" title="statement not covered" >    return NativeScriptRenderer;</span>
+}(core_1.Renderer2));
+<span class="cstat-no" title="statement not covered" >exports.NativeScriptRenderer = NativeScriptRenderer;</span>
+<span class="cstat-no" title="statement not covered" >var EmulatedRenderer = (<span class="fstat-no" title="function not covered" >function (_super) {</span></span>
+<span class="cstat-no" title="statement not covered" >    __extends(EmulatedRenderer, _super);</span>
+<span class="fstat-no" title="function not covered" >    function EmulatedRenderer(component, rootView, zone, viewUtil) {</span>
+<span class="cstat-no" title="statement not covered" >        var _this = _super.call(this, rootView, zone, viewUtil) || this;</span>
+<span class="cstat-no" title="statement not covered" >        var componentId = component.id.replace(ATTR_SANITIZER, "_");</span>
+<span class="cstat-no" title="statement not covered" >        _this.contentAttr = replaceNgAttribute(exports.CONTENT_ATTR, componentId);</span>
+<span class="cstat-no" title="statement not covered" >        _this.hostAttr = replaceNgAttribute(exports.HOST_ATTR, componentId);</span>
+<span class="cstat-no" title="statement not covered" >        _this.addStyles(component.styles, componentId);</span>
+<span class="cstat-no" title="statement not covered" >        return _this;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    EmulatedRenderer.prototype.applyToHost = <span class="fstat-no" title="function not covered" >function (view) {</span></span>
+<span class="cstat-no" title="statement not covered" >        _super.prototype.setAttribute.call(this, view, this.hostAttr, "");</span>
+    };
+<span class="cstat-no" title="statement not covered" >    EmulatedRenderer.prototype.appendChild = <span class="fstat-no" title="function not covered" >function (parent, newChild) {</span></span>
+<span class="cstat-no" title="statement not covered" >        _super.prototype.appendChild.call(this, parent, newChild);</span>
+    };
+<span class="cstat-no" title="statement not covered" >    EmulatedRenderer.prototype.createElement = <span class="fstat-no" title="function not covered" >function (parent, name) {</span></span>
+<span class="cstat-no" title="statement not covered" >        var view = _super.prototype.createElement.call(this, parent, name);</span>
+        // Set an attribute to the view to scope component-specific css.
+        // The property name is pre-generated by Angular.
+<span class="cstat-no" title="statement not covered" >        _super.prototype.setAttribute.call(this, view, this.contentAttr, "");</span>
+<span class="cstat-no" title="statement not covered" >        return view;</span>
+    };
+<span class="cstat-no" title="statement not covered" >    EmulatedRenderer.prototype.addStyles = <span class="fstat-no" title="function not covered" >function (styles, componentId) {</span></span>
+<span class="cstat-no" title="statement not covered" >        styles.map(<span class="fstat-no" title="function not covered" >function (s) {</span> <span class="cstat-no" title="statement not covered" >return s.toString(); </span>})</span>
+            .map(<span class="fstat-no" title="function not covered" >function (s) {</span> <span class="cstat-no" title="statement not covered" >return replaceNgAttribute(s, componentId); </span>})
+            .forEach(application_1.addCss);
+    };
+<span class="cstat-no" title="statement not covered" >    return EmulatedRenderer;</span>
+}(NativeScriptRenderer));
+<span class="fstat-no" title="function not covered" >function replaceNgAttribute(input, componentId) {</span>
+<span class="cstat-no" title="statement not covered" >    return input.replace(COMPONENT_REGEX, componentId);</span>
+}
+//# sourceMappingURL=renderer.js.map
+&nbsp;</pre></td></tr>
+</table></pre>
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 11:05:59 GMT+0000 (UTC)</div>
+</div>
+</body>
+</html>
